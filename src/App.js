@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
+import ReactDom from "react-dom";
 import logo from './logo.svg';
 import './App.css';
-import TeamMemberList from "./components/TeamMemberList";
+import TeamMemberForm from "./components/TeamMemberForm";
 import TeamMemberItem from "./components/TeamMemberItem";
 
 function App() {
   const [teamMembers, setTeamMembers] = useState([
     {
         id: 1,
-        name: "Tate Keller Moctezuma"
+        title: "Tate Keller Moctezuma"
     }
 ]);
 const addNewTeamMember = teamMember => {
     const newTeamMember = {
         id: Date.now(),
-        name: teamMember.name
+        title: teamMember.title
     };
     setTeamMembers([...teamMembers, newTeamMember])
 };
 return (
     <div className="App">
         <h1>The Team!</h1>
-        <TeamMemberList addNewTeamMember={addNewTeamMember} />
+        <TeamMemberForm addNewTeamMember={addNewTeamMember} />
         <TeamMemberItem teamMembers={teamMembers}/>
     </div>
 )
