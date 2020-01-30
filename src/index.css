@@ -18,6 +18,8 @@ code {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .note {
@@ -30,6 +32,12 @@ code {
   border: 5px outset rgb(90, 36, 22);
   text-shadow:  2px 2px darkslateblue;
   border-radius: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+ 
 }
 Form { 
   display: flex;
@@ -50,7 +58,7 @@ button {
   font-size: 1rem;
 }
 label {
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 1%;
   color:  white;
   text-shadow: 2px 2px rgb(0, 0, 0);
