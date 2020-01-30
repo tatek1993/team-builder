@@ -5,11 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: darkorchid;
+  background-image: url(https://images.unsplash.com/photo-1566996533071-2c578080c06e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80);
+  background-size: cover;
   color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.note {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  margin: 10px;
+  background-color: #e0ad05;
+  border: 5px outset rgb(90, 36, 22);
+  text-shadow:  2px 2px darkslateblue;
 }
