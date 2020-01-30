@@ -7,7 +7,9 @@ const TeamMemberItem = props => {
       {props.teamMembers.map(teamMember => (
          
         <div className="note" key={teamMember.id}>
-          <h2>{teamMember.title}</h2>
+         <h2>{teamMember.title}</h2>
+         <p>{teamMember.body}</p>
+         <p>{teamMember.role}</p>
         </div>
       ))} 
       

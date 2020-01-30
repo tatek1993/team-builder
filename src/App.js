@@ -9,19 +9,23 @@ function App() {
   const [teamMembers, setTeamMembers] = useState([
     {
         id: 1,
-        title: "Tate Keller Moctezuma"
+        title: "Tate Keller Moctezuma",
+        body: "tatek1993@gmail.com",
+        role: "UI Developer"
     }
 ]);
 const addNewTeamMember = teamMember => {
     const newTeamMember = {
         id: Date.now(),
-        title: teamMember.title
+        title: teamMember.title,
+        body: teamMember.body,
+        role: teamMember.role
     };
     setTeamMembers([...teamMembers, newTeamMember])
 };
 return (
     <div className="App">
-        <h1>The Team!</h1>
+        <h1>Join The Team!</h1>
         <TeamMemberForm addNewTeamMember={addNewTeamMember} />
         <TeamMemberItem teamMembers={teamMembers}/>
     </div>
